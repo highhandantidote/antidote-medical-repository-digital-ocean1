@@ -41,3 +41,4 @@ wtforms==3.1.2
 numpy==1.26.4
 sift-stack-py
 opencv-python==4.9.0.80
+scipy==1.14.1
