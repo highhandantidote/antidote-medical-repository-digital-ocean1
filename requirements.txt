@@ -38,3 +38,6 @@ trafilatura==1.12.2
 twilio==9.2.4
 werkzeug==3.0.4
 wtforms==3.1.2
+numpy==1.26.4
+sift-stack-py
+opencv-python==4.9.0.80
