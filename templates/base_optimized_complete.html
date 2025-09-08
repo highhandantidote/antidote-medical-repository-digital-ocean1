@@ -12,7 +12,7 @@
     </script>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
     <title>Antidote - {% block title %}Plastic Surgery Marketplace{% endblock %}</title>
     
     <!-- Enhanced SEO Meta Tags -->
@@ -98,17 +98,26 @@
     <meta name="analyze-query-url" content="/api/analyze-query">
     <meta name="recommendation-results-url" content="/recommendations">
     
-    <!-- Preconnect & Preload Key Resources -->
+    <!-- CRITICAL MOBILE PERFORMANCE OPTIMIZATIONS -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
+    <!-- Mobile Resource Hints -->
+    <link rel="prefetch" href="{{ url_for('static', filename='js/mobile-optimized.js') }}">
+    <link rel="modulepreload" href="{{ url_for('static', filename='js/critical-mobile.js') }}">
+    
     <!-- ========== PERFORMANCE OPTIMIZED CSS LOADING ========== -->
     
-    <!-- Google Fonts - Load first for critical text rendering -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Optimized for mobile performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- External CSS Dependencies - Load with preload for better performance -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -127,14 +136,58 @@
     <link rel="preload" href="{{ url_for('static', filename='optimized/components-bundle.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ url_for('static', filename='optimized/components-bundle.css') }}"></noscript>
     
-    <!-- JavaScript Dependencies - Load before DOM ready -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- OPTIMIZED JAVASCRIPT LOADING FOR MOBILE -->
+    <script>
+        // Critical mobile performance detection
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const isSlowConnection = navigator.connection && (navigator.connection.effectiveType === 'slow-2g' || navigator.connection.effectiveType === '2g');
+        
+        // Load essential scripts immediately
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prioritize loading based on device
+            if (isMobile || isSlowConnection) {
+                loadScript('https://code.jquery.com/jquery-3.6.0.slim.min.js');
+            } else {
+                loadScript('https://code.jquery.com/jquery-3.6.0.min.js');
+            }
+            loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js');
+            
+            // Load feather icons after critical content
+            setTimeout(() => loadScript('https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js'), 100);
+        });
+        
+        function loadScript(src) {
+            const script = document.createElement('script');
+            script.src = src;
+            script.async = true;
+            document.head.appendChild(script);
+        }
+    </script>
     
     {% block extra_css %}{% endblock %}
     
     <style>
+        /* CRITICAL CSS FOR INSTANT MOBILE LOADING */
+        body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#333}
+        *{box-sizing:border-box}
+        .container{max-width:1200px;margin:0 auto;padding:0 15px}
+        
+        /* Mobile-first Critical Navigation */
+        .navbar{background:#fff;box-shadow:0 2px 10px rgba(0,160,176,.1);padding:0.5rem 0;position:fixed;top:0;width:100%;z-index:1000}
+        .navbar-brand{font-weight:700;color:#00A0B0!important;font-size:1.5rem}
+        .nav-link{color:#333!important;font-weight:500;padding:0.5rem 1rem}
+        .btn-primary{background:#00A0B0;border:#00A0B0;padding:0.5rem 1.5rem;border-radius:5px;font-weight:600}
+        
+        /* Critical Mobile Layout */
+        @media (max-width:768px){
+            body{padding-top:70px}
+            .navbar{padding:0.3rem 0}
+            .navbar-brand{font-size:1.2rem}
+            .nav-link{padding:0.3rem 0.8rem;font-size:0.9rem}
+            .btn{padding:0.4rem 1rem;font-size:0.9rem}
+            .container{padding:0 10px}
+        }
+        
         /* Navigation Menu Styles */
         .navbar-smaller .nav-link {
             font-size: 0.8rem;
