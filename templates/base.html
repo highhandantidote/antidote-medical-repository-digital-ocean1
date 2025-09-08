@@ -14,6 +14,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Mobile Performance Optimization -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-status-bar-style" content="default">
+    
     <!-- Permissions Policy for Camera Access -->
     <meta http-equiv="Permissions-Policy" content="camera=*, microphone=*, geolocation=*, payment=*">
     
@@ -80,9 +85,14 @@
     <!-- Open Search -->
     <link rel="search" type="application/opensearchdescription+xml" title="Antidote Medical Search" href="/opensearch.xml">
     
-    <!-- DNS Prefetch for Performance -->
+    <!-- Critical Mobile Performance Hints -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Mobile-First Resource Loading -->
+    <link rel="preload" href="{{ url_for('static', filename='images/antidote-logo-new.png') }}?v=11" as="image" media="(max-width: 768px)">
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     
     <!-- Alternate Language Pages -->
