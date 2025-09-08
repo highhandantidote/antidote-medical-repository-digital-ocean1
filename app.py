@@ -88,6 +88,14 @@ def create_app():
     try:
         from server_performance_optimization import initialize_performance_optimization
         initialize_performance_optimization(app)
+        
+        # Add mobile performance monitoring
+        from mobile_performance_monitor import initialize_mobile_monitoring
+        initialize_mobile_monitoring(app)
+        
+        # Add performance diagnostic endpoints
+        from performance_endpoints import initialize_performance_endpoints
+        initialize_performance_endpoints(app)
         logger.info("Performance optimization system initialized successfully")
     except ImportError as e:
         logger.warning(f"Performance optimization system not available: {e}")
