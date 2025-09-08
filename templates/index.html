@@ -2727,33 +2727,37 @@ if (document.getElementById('hero-banner')) {
     // Handle window resize for responsive images
     window.addEventListener('resize', updateBannerImage);
     
-    // Track banner impression without CSRF (analytics endpoint)
-    fetch('/api/banners/impression', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            banner_id: slide.id,
-            position: 'hero_banner'
-        })
-    }).catch(err => console.warn('Banner impression tracking failed:', err.status || 'Network error'));
+    // Track banner impression without CSRF (analytics endpoint) - only if slide exists
+    if (slide && slide.id) {
+        fetch('/api/banners/impression', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                slide_id: slide.id,
+                position: 'hero_banner'
+            })
+        }).catch(err => console.warn('Banner impression tracking failed:', err.status || 'Network error'));
+    }
     
     // Track banner clicks
     const bannerLink = document.querySelector('#hero-banner .banner-link');
     if (bannerLink) {
         bannerLink.addEventListener('click', function(e) {
-            // Track click event
-            fetch('/api/banners/click', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    banner_id: slide.id,
-                    position: 'hero_banner'
-                })
-            }).catch(err => console.warn('Banner click tracking failed:', err));
+            // Track click event - only if slide exists
+            if (slide && slide.id) {
+                fetch('/api/banners/click', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        slide_id: slide.id,
+                        position: 'hero_banner'
+                    })
+                }).catch(err => console.warn('Banner click tracking failed:', err));
+            }
         });
     }
     {% else %}
