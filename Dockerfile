@@ -35,9 +35,9 @@ USER app
 # Expose port 8080 (DigitalOcean App Platform default)
 EXPOSE 8080
 
-# Health check
+# Health check - Use $PORT environment variable
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:8080/health || exit 1
+    CMD /bin/sh -c 'curl -f http://localhost:${PORT:-8080}/health || exit 1'
 
-# Start the application
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "4", "--timeout", "120", "application:application"]
+# Start the application - Use main:app and bind to $PORT
+CMD ["/bin/sh", "-c", "gunicorn --bind 0.0.0.0:${PORT:-8080} --workers 4 --timeout 120 main:app"]
