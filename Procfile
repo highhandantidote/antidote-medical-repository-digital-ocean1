@@ -1,1 +1,1 @@
-web: gunicorn -k gthread -w 4 --threads 8 --bind 0.0.0.0:$PORT --timeout 60 --keep-alive 5 main:app
+web: gunicorn --worker-tmp-dir /dev/shm -c gunicorn_config.py main:app

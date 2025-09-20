@@ -5,8 +5,8 @@ Addresses startup timeout and worker configuration issues.
 import os
 import multiprocessing
 
-# Server socket
-bind = "0.0.0.0:5000"
+# Server socket - DigitalOcean App Platform expects port 8080
+bind = "0.0.0.0:8080"
 backlog = 2048
 
 # Worker processes (optimized for deployment)
