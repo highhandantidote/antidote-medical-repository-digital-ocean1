@@ -15,8 +15,9 @@ from dotenv import load_dotenv
 # Load environment variables from .env file if it exists
 load_dotenv()
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG)
+# Configure logging based on environment (default INFO for production)
+log_level = os.environ.get('LOG_LEVEL', 'INFO').upper()
+logging.basicConfig(level=getattr(logging, log_level, logging.INFO))
 logger = logging.getLogger(__name__)
 
 class Base(DeclarativeBase):
@@ -48,8 +49,10 @@ def create_app():
     from deployment_config import DeploymentConfig
     DeploymentConfig.configure_app(app)
     
-    # Set secret key with deployment optimization
-    app.secret_key = os.environ.get("SESSION_SECRET", "antidote_secret_key")
+    # Set secret key (required for session security)
+    app.secret_key = os.environ.get("SESSION_SECRET")
+    if not app.secret_key:
+        raise ValueError("SESSION_SECRET environment variable must be set for security")
     
     # Optimize startup environment
     try:
@@ -645,19 +648,9 @@ def create_app():
             logger.warning(f"Clinic dashboard not available: {e}")
         
         # Register routes for immediate functionality
-        try:
-            from routes import register_routes
-            register_routes(app)
-            logger.info("✅ Core routes registered successfully")
-            
-            # Debug: Log registered routes to verify blueprints are working
-            logger.info(f"🔍 Registered routes: {[rule.rule for rule in app.url_map.iter_rules()]}")
-        except Exception as e:
-            logger.error(f"❌ CRITICAL: Failed to register core routes: {e}")
-            # Add basic fallback route so app doesn't return 404
-            @app.route('/')
-            def emergency_home():
-                return "App is starting... Please check logs for route registration issues."
+        from routes import register_routes
+        register_routes(app)
+        logger.info("✅ Core routes registered successfully")
         
         # Register advanced SEO system for top Google rankings
         try:

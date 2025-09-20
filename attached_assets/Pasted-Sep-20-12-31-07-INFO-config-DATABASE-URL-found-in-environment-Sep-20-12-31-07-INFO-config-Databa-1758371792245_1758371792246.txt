@@ -1,0 +1,125 @@
+Sep 20 12:31:07  INFO:config:✅ DATABASE_URL found in environment
+Sep 20 12:31:07  INFO:config:Database URL (masked): postgresql://postgres.fzratsdxchvololpzkir:***@aws-0-ap-south-1.pooler.supabase.com:6543/postgres
+Sep 20 12:31:07  INFO:deployment_config:Applying deployment configuration...
+Sep 20 12:31:07  INFO:deployment_config:✅ Deployment configuration applied successfully
+Sep 20 12:31:07  INFO:app:✅ Environment optimized for deployment
+Sep 20 12:31:07  INFO:app:✅ Security headers middleware registered
+Sep 20 12:31:07  INFO:app:✅ Security headers middleware enabled
+Sep 20 12:31:07  INFO:server_performance_optimization:Performance optimization system initialized
+Sep 20 12:31:07  INFO:mobile_performance_monitor:✅ Mobile performance monitoring initialized
+Sep 20 12:31:07  INFO:app:Performance optimization system initialized successfully
+Sep 20 12:31:07  🚀 Registering safe performance optimizations...
+Sep 20 12:31:07  ⚠️ Compression middleware disabled to prevent encoding issues
+Sep 20 12:31:07  ✅ Cache headers enabled for static files
+Sep 20 12:31:08  ✅ Database query caching initialized
+Sep 20 12:31:08  ✅ Performance monitoring enabled
+Sep 20 12:31:08  🎯 Safe performance optimizations registered successfully
+Sep 20 12:31:08  INFO:app:Phase 2 CSS and static asset optimizations initialized
+Sep 20 12:31:08  Server response optimizations initialized
+Sep 20 12:31:08  INFO:app:Phase 3 server response optimizations initialized
+Sep 20 12:31:08  INFO:app:Responsive image serving initialized
+Sep 20 12:31:08  INFO:app:Phase 4A static asset optimization disabled to prevent endpoint conflicts
+Sep 20 12:31:08  INFO:app:Phase 4A server response optimization initialized
+Sep 20 12:31:08  ✅ Advanced performance middleware registered
+Sep 20 12:31:08  🚀 Advanced performance optimizations registered successfully
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Keeping essential module: critical_performance_fix
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Keeping essential module: css_render_blocking_fix
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Keeping essential module: security_headers
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Keeping essential module: compression_middleware
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Middleware order optimized
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Middleware conflicts resolved - Disabled 0 redundant modules
+Sep 20 12:31:08  INFO:middleware_conflict_resolver:✅ Middleware conflict resolution registered
+Sep 20 12:31:08  INFO:app:✅ Middleware conflicts resolved
+Sep 20 12:31:08  INFO:doctors_route_optimizer:✅ Optimized doctors route registered
+Sep 20 12:31:08  INFO:app:⚡ Optimized doctors route registered
+Sep 20 12:31:08  ✅ Server response optimizations registered
+Sep 20 12:31:08  🚀 Server response optimizations registered successfully
+Sep 20 12:31:08  INFO:app:✅ Mobile performance optimization (100% target) registered
+Sep 20 12:31:08  INFO:app:📱 Mobile performance optimizer registered
+Sep 20 12:31:08  INFO:force_production_config:🔧 Forcing production optimizations for antidote.fit
+Sep 20 12:31:08  INFO:force_production_config:✅ Production optimizations forced - pool_size=30, cache=simple
+Sep 20 12:31:08  INFO:app:🔥 Forced production configuration applied
+Sep 20 12:31:08  INFO:app:✅ Compression middleware enabled
+Sep 20 12:31:08  INFO:app:✅ Optimized static file serving enabled
+Sep 20 12:31:08  INFO:app:✅ Performance configuration registered
+Sep 20 12:31:08  INFO:deployment_startup_fix:✅ Health check endpoints registered
+Sep 20 12:31:08  INFO:deployment_startup_fix:🚀 Starting background initialization...
+Sep 20 12:31:08  INFO:deployment_startup_fix:🔄 Background initialization thread started
+Sep 20 12:31:08  INFO:deployment_startup_fix:⚡ Starting fast database initialization...
+Sep 20 12:31:08  INFO:deployment_startup_fix:✅ Deployment settings configured
+Sep 20 12:31:08  INFO:deployment_startup_fix:✅ Database connection verified
+Sep 20 12:31:08  INFO:app:Unified clinic dashboard blueprint registered
+Sep 20 12:31:08  WARNING:app:Clinic dashboard not available: cannot import name 'ClinicConsultation' from 'models' (/workspace/models.py)
+Sep 20 12:31:08  INFO:admin_transaction_history:Admin audit log table created successfully
+Sep 20 12:31:09  INFO:dispute_management_system:Dispute management tables created successfully
+Sep 20 12:31:09  INFO:routes:Enhanced lead generation system with Firebase OTP registered successfully.
+Sep 20 12:31:09  INFO:routes:OTP-only authentication system registered successfully.
+Sep 20 12:31:09  INFO:deployment_startup_fix:✅ Database tables created in 1.396s
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ Database initialization completed successfully
+Sep 20 12:31:10  INFO:deployment_startup_fix:🔧 Initializing core services...
+Sep 20 12:31:10  WARNING:deployment_startup_fix:⚠️ Personalization service initialization failed: type object 'PersonalizationService' has no attribute 'initialize_cache'
+Sep 20 12:31:10  INFO:deployment_startup_fix:ℹ️ Search optimizer not available
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ Core services initialization completed
+Sep 20 12:31:10  INFO:deployment_startup_fix:⚡ Initializing performance systems...
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ server_response_optimization initialized
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ compression_middleware initialized
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ static_asset_optimizer initialized
+Sep 20 12:31:10  INFO:deployment_startup_fix:ℹ️ css_optimizer not available
+Sep 20 12:31:10  INFO:deployment_startup_fix:ℹ️ image_optimizer not available
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ Performance systems initialization completed
+Sep 20 12:31:10  INFO:deployment_startup_fix:✅ Background initialization completed in 1.88s
+Sep 20 12:31:13  INFO:ai_recommendations_clean:Gemini AI initialized successfully
+Sep 20 12:31:13  INFO:routes:Clean AI recommendation system registered successfully.
+Sep 20 12:31:13  INFO:routes:Enhanced face analysis system with lead capture registered successfully.
+Sep 20 12:31:13  INFO:routes:Enhanced cost calculator system with lead capture registered successfully.
+Sep 20 12:31:13  INFO:routes:Comprehensive admin dashboard for lead analytics registered successfully.
+Sep 20 12:31:13  INFO:routes:Admin dashboard debug blueprint imported successfully.
+Sep 20 12:31:13  INFO:routes:Community API routes imported successfully.
+Sep 20 12:31:13  INFO:routes:Enhanced community routes imported successfully.
+Sep 20 12:31:13  INFO:routes:Education routes imported successfully.
+Sep 20 12:31:13  INFO:routes:Cost calculator routes imported successfully.
+Sep 20 12:31:13  INFO:routes:Enhanced package routes imported successfully.
+Sep 20 12:31:13  INFO:routes:Community reply routes imported successfully.
+Sep 20 12:31:13  INFO:routes:SEO optimization - core infrastructure active, content pages disabled for debugging.
+Sep 20 12:31:13  INFO:routes:Community API blueprint registered successfully.
+Sep 20 12:31:13  INFO:routes:Education blueprint registered successfully.
+Sep 20 12:31:15  WARNING:utils.gemini_analysis:GOOGLE_API_KEY environment variable not set
+Sep 20 12:31:15  WARNING:routes:Face analysis routes not found. Face analysis feature will not be available.
+Sep 20 12:31:15  INFO:routes:Cost calculator blueprint registered successfully.
+Sep 20 12:31:15  INFO:payment_routes:Razorpay client initialized successfully
+Sep 20 12:31:15  INFO:routes:Payment routes registered successfully.
+Sep 20 12:31:15  INFO:simple_billing_system:Razorpay client initialized successfully
+Sep 20 12:31:15  INFO:routes:Simplified billing system with promo codes registered successfully as primary billing system.
+Sep 20 12:31:15  INFO:routes:Admin credit management system registered successfully.
+Sep 20 12:31:15  INFO:routes:Dynamic lead pricing system registered successfully.
+Sep 20 12:31:15  WARNING:routes:Dispute management system registration failed: View function mapping is overwriting an existing endpoint function: dispute.decorated_function
+Sep 20 12:31:15  INFO:routes:Enhanced lead capture with credit processing registered successfully.
+Sep 20 12:31:15  INFO:routes:Lead notification system registered successfully.
+Sep 20 12:31:15  INFO:routes:Lead disputes system registered successfully.
+Sep 20 12:31:15  INFO:routes:Admin dashboard debug blueprint registered successfully.
+Sep 20 12:31:15  WARNING:routes:Enhanced review system not found.
+Sep 20 12:31:15  WARNING:routes:Virtual consultation system not found.
+Sep 20 12:31:15  INFO:routes:Social community system registered successfully.
+Sep 20 12:31:15  WARNING:routes:Price transparency system not found.
+Sep 20 12:31:15  WARNING:routes:Enhanced booking features not found.
+Sep 20 12:31:15  WARNING:routes:Gangnam Unni services & pricing system not found.
+Sep 20 12:31:15  INFO:routes:Community reply blueprint registered successfully.
+Sep 20 12:31:15  INFO:routes:Banner routes registered successfully.
+Sep 20 12:31:15  INFO:routes:Modern Community API registered successfully.
+Sep 20 12:31:15  INFO:routes:Reddit Import System registered successfully.
+Sep 20 12:31:15  INFO:routes:Main web and API blueprints registered successfully.
+Sep 20 12:31:15  INFO:routes:Clinic marketplace routes registered successfully.
+Sep 20 12:31:15  INFO:routes:Enhanced package routes registered successfully.
+Sep 20 12:31:15  INFO:routes:Google Reviews management system registered successfully.
+Sep 20 12:31:15  INFO:admin_clinic_routes:Admin clinic routes registered successfully
+Sep 20 12:31:15  INFO:routes:Admin clinic application routes registered successfully.
+Sep 20 12:31:15  INFO:app:✅ Core routes registered successfully
+Sep 20 12:31:15  INFO:app:🔍 Registered routes: ['/static/<path:filename>', '/performance-metrics', '/api/mobile/performance-stats', '/api/mobile/track-performance', '/api/performance/health', '/api/performance/quick-test', '/api/performance/mobile-readiness', '/static/css/<path:filename>', '/static/js/<path:filename>', '/optimized-image/<path:image_name>', '/banner/<path:image_name>', '/hero/<path:image_name>', '/admin/middleware-status', '/doctors', '/api/mobile/performance', '/forced-production-status', '/static/<path:filename>', '/health-check', '/api/track-interaction', '/api/banners/impression', '/api/banners/click', '/geocode', '/health/', '/health', '/ready/', '/ready', '/alive/', '/alive', '/clinic/dashboard', '/clinic/profile/update', '/clinic/cta/update', '/clinic/packages', '/clinic/packages/add', '/clinic/packages/edit/<int:package_id>', '/clinic/packages/preview/<int:package_id>', '/clinic/api/procedures/search', '/clinic/api/doctors', '/clinic/doctors', '/clinic/doctors/add', '/clinic/doctors/search', '/clinic/doctors/add-existing', '/clinic/doctors/edit/<int:doctor_id>', '/clinic/doctors/get/<int:doctor_id>', '/clinic/doctors/remove/<int:doctor_id>', '/clinic/upload/profile-image', '/clinic/upload/banner-image', '/clinic/update-profile', '/clinic/update-contact', '/clinic/update-highlights', '/clinic/update-specialties', '/clinic/update-popular-procedures', '/clinic/api/categories', '/clinic/api/procedures/search', '/clinic/api/extract-location', '/api/leads/check-verification', '/api/leads/create-verified-lead', '/api/leads/create-authenticated-lead', '/api/leads/verify-phone', '/api/leads/analytics', '/auth', '/auth/send-otp', '/auth/firebase-login', '/auth/verify-otp', '/auth/complete-profile', '/logout', '/api/analyze-query', '/ai-recommendations-results', '/ai-recommendations', '/enhanced-face/analysis-form', '/enhanced-face/submit-analysis', '/enhanced-face/capture-analysis-lead', '/enhanced-cost/calculator', '/enhanced-cost/calculate-cost', '/enhanced-cost/request-detailed-quote', '/admin/comprehensive/leads', '/admin/comprehensive/dashboard', '/admin/comprehensive/interactions', '/admin/comprehensive/lead-scoring', '/admin/comprehensive/update-lead-status/<int:lead_id>', '/admin/comprehensive/export-leads', '/admin/comprehensive/update-scoring-rule/<int:rule_id>', '/api/community', '/api/community/<int:thread_id>', '/api/community', '/api/community/<int:thread_id>', '/api/community/<int:thread_id>', '/api/community/search', '/api/community-replies/<int:reply_id>/upvote', '/api/community-replies/<int:reply_id>', '/api/community-replies/', '/api/users/<username>', '/api/users/<username>/posts', '/api/users/check-username', '/api/users/signup', '/api/users/update-profile', '/api/users/<int:user_id>', '/api/messages', '/api/messages', '/api/messages/unread-count', '/api/messages/mark-read', '/api/messages/<int:message_id>', '/api/notifications', '/api/notifications', '/api/notifications/unread-count', '/api/notifications/mark-read', '/api/notifications/<int:notification_id>', '/api/community-moderation', '/api/community-moderation/<int:action_id>', '/api/community-moderation', '/api/community-moderation/<int:action_id>', '/api/community-moderation/<int:action_id>', '/api/verification/doctors/pending', '/api/verification/doctors/<int:doctor_id>', '/api/verification/doctors/<int:doctor_id>/approve', '/api/verification/doctors/<int:doctor_id>/reject', '/api/verification/stats', '/api/verification/doctors/search', '/api/community/<int:thread_id>/replies', '/api/community/<int:thread_id>/replies/<int:reply_id>', '/api/community/<int:thread_id>/replies/<int:reply_id>', '/learn/', '/learn/browse', '/learn/module/<int:module_id>', '/learn/quiz/<int:quiz_id>', '/learn/quiz/<int:quiz_id>/submit', '/learn/quiz/results/<int:attempt_id>', '/learn/achievements', '/cost-calculator/', '/cost-calculator/api/procedure/<int:procedure_id>', '/payment/topup', '/payment/verify', '/payment/webhook', '/payment/history', '/clinic/credits/topup', '/clinic/simple-promotions', '/clinic/apply-promo', '/clinic/simple-purchase-credits', '/clinic/payment-checkout/<order_id>', '/clinic/demo-payment/<order_id>', '/clinic/demo-payment-complete', '/clinic/verify-payment', '/admin/credits', '/admin/credits/allocate', '/admin/credits/debit', '/admin/credits/transfer', '/admin/credits/clinic/<int:clinic_id>', '/admin/credits/bulk-allocate', '/api/pricing/calculate', '/api/pricing/preview', '/admin/lead-pricing', '/admin/pricing/create', '/admin/pricing/update', '/admin/pricing/delete', '/clinic/disputes', '/clinic/disputes/create', '/api/lead/cost-calculator', '/api/lead/submit', '/clinic/leads/dashboard', '/clinic/leads/<int:lead_id>', '/clinic/leads/<int:lead_id>/update-status', '/instant-contact/<int:package_id>', '/instant-contact/clinic/<int:clinic_id>', '/api/api/notifications/clinic', '/api/api/notifications/<int:notification_id>/read', '/clinic/clinic/disputes', '/clinic/clinic/dispute-lead', '/clinic/admin/disputes', '/clinic/admin/resolve-dispute', '/admin-debug/', '/community/', '/community/procedure/<procedure_name>', '/community/create-post/<procedure_name>', '/community/submit-post', '/community/before-after-gallery', '/community/expert-qa', '/community/expert-qa/<int:session_id>', '/community/submit-question/<int:session_id>', '/community/treatment-journey-tracker', '/community/add-journey-update/<int:journey_id>', '/community/like-post/<int:post_id>', '/community/report-post/<int:post_id>', '/community/api/community-stats', '/api/community/trends', '/community/reply/create', '/community/reply/edit/<int:reply_id>', '/community/reply/delete/<int:reply_id>', '/community/reply/upvote/<int:reply_id>', '/community/thread/<int:thread_id>/reply', '/api/community/<int:thread_id>/replies', '/admin/banners', '/admin/banners/create', '/admin/banners/<int:banner_id>/toggle', '/admin/banners/<int:banner_id>/delete', '/admin/banners/<int:banner_id>/slides/create', '/admin/slides/<int:slide_id>/toggle', '/admin/slides/<int:slide_id>/delete', '/admin/slides/<int:slide_id>/edit', '/api/banners/active-positions', '/api/banners/<position>', '/api/banners/impression', '/api/banners/click', '/api/banners/slide/<int:slide_id>/click', '/api/community/posts', '/api/community/vote', '/api/community/save', '/api/community/trending', '/api/community/experts', '/admin/reddit/', '/admin/reddit/import', '/admin/reddit/bulk-import', '/admin/reddit/preview', '/review/<int:id>', '/review/edit/<int:id>', '/review/delete/<int:id>', '/appointment/<action>/<int:id>', '/doctor/<int:doctor_id>/appointments', '/doctor/<int:doctor_id>/reviews', '/review/<int:review_id>/reply', '/health', '/', '/test-performance', '/modern', '/body-parts', '/categories', '/autocomplete', '/search', '/procedures', '/community', '/community/legacy', '/community/post/<int:thread_id>', '/community/thread/<int:thread_id>', '/doctors/detail/<int:doctor_id>', '/procedure/<int:procedure_id>', '/procedures/detail/<int:procedure_id>', '/doctors', '/dashboard/user/<int:user_id>', '/dashboard/doctor/<int:doctor_id>/manage-appointments', '/appointment/doctor-action/<string:action>/<int:id>', '/dashboard/doctor/<int:doctor_id>', '/dashboard/community/create', '/dashboard/community/edit/<int:thread_id>', '/dashboard/doctor/<int:doctor_id>/leads', '/dashboard/doctor/<int:doctor_id>/procedures', '/dashboard/doctor/<int:doctor_id>/availability', '/dashboard/doctor/<int:doctor_id>/availability/update', '/dashboard/doctor/<int:doctor_id>/availability/special-date/add', '/dashboard/doctor/<int:doctor_id>/availability/special-date/delete', '/dashboard/doctor/<int:doctor_id>/gallery', '/dashboard/doctor/<int:doctor_id>/gallery/upload', '/dashboard/doctor/<int:doctor_id>/gallery/edit', '/dashboard/doctor/<int:doctor_id>/gallery/delete', '/dashboard/doctor/<int:doctor_id>/community', '/doctor/<int:doctor_id>/procedure/add', '/doctor/<int:doctor_id>/procedure/<int:procedure_id>/remove', '/doctor/<int:doctor_id>/procedure/<int:procedure_id>/update', '/admin/category-images', '/admin/category/<int:category_id>/upload-image', '/admin/category/<int:category_id>/remove-image', '/admin/upload-procedure-image', '/lead/<int:lead_id>/details', '/lead/<int:lead_id>/view', '/lead/<int:lead_id>/contact', '/lead/<int:lead_id>/update_status', '/dashboard/doctor/<int:doctor_id>/verification', '/dashboard/doctor/<int:doctor_id>/verification/submit', '/admin/doctor-verification-requests', '/admin/doctor/<int:doctor_id>/verification/approve', '/admin/doctor/<int:doctor_id>/verification/reject', '/clinic/<int:clinic_id>', '/dashboard/community', '/community/new', '/community/analytics', '/dashboard/doctor/verify', '/dashboard/admin/doctor-verifications', '/api/doctor/<int:doctor_id>/approve', '/api/doctor/<int:doctor_id>/reject', '/dashboard/procedures', '/admin/procedures/delete/<int:procedure_id>', '/admin/procedures/edit/<int:procedure_id>', '/admin/allocate-credits', '/admin/lead-analytics', '/admin/leads/<int:lead_id>/details', '/dashboard/admin', '/admin/users', '/admin/users/<int:user_id>/edit', '/admin/users/<int:user_id>/delete', '/admin/clinic', '/admin/clinic/<int:clinic_id>/approve', '/admin/clinic/<int:clinic_id>/reject', '/admin/clinic/<int:clinic_id>/unapprove', '/admin/clinic/<int:clinic_id>/verify', '/admin/clinic/<int:clinic_id>/unverify', '/admin/clinic/<int:clinic_id>/assign-owner', '/admin/clinic/<int:clinic_id>/details', '/admin/community-moderation', '/admin/community/thread/<int:thread_id>/delete', '/admin/community/thread/<int:thread_id>/flag', '/admin/procedures', '/admin/procedures/toggle-featured', '/admin/procedures/add', '/admin/categories/add', '/admin/body-parts/add', '/sitemap.xml', '/sitemap-main.xml', '/sitemap-procedures.xml', '/sitemap-clinics.xml', '/sitemap-doctors.xml', '/sitemap-categories.xml', '/sitemap-community.xml', '/sitemap-bodyparts.xml', '/opensearch.xml', '/admin/analytics', '/submit-lead', '/lead-confirmation/<int:lead_id>', '/mock_login', '/signup', '/login', '/book_appointment/<int:doctor_id>', '/register', '/logout', '/favorites', '/save-item', '/remove-favorite/<int:favorite_id>', '/submit-review', '/review/helpful/<int:review_id>', '/helpful/<int:review_id>', '/review/report/<int:review_id>', '/report/<int:review_id>', '/mobile-search', '/consult/book', '/ai-assist', '/api/procedures', '/api/procedures/load-more', '/api/doctors/load-more', '/personalization/track-interaction', '/personalization/recommendations/<content_type>', '/clinic/leads', '/admin/transaction-history', '/clinic/billing', '/api/ai-search', '/api/body-parts', '/api/body-parts/<int:body_part_id>', '/api/categories', '/api/procedures', '/api/procedures/<int:procedure_id>', '/api/procedures/<int:procedure_id>/recommendations', '/api/doctors', '/api/doctors/<int:doctor_id>', '/api/community', '/api/community/posts', '/api/community/<int:thread_id>/replies', '/api/community/trends', '/api/media/<path:url>', '/api/track-interaction', '/api/recommendations/<content_type>', '/clinic/', '/clinic/all', '/clinic/directory', '/clinic/packages', '/clinic/api/packages/load-more', '/clinic/profile/<slug>', '/clinic/search', '/clinic/api/clinic/search', '/clinic/api/clinic/locations', '/clinic/api/clinic/specialties', '/clinic/api/geocode/reverse', '/clinic/view/<slug>', '/clinic/profile/<slug>/packages', '/clinic/contact/<int:clinic_id>', '/clinic/leads/<int:lead_id>/status', '/clinic/leads/export', '/clinic/credits/topup', '/clinic/credits/history', '/clinic/notifications', '/clinic/api/notifications/unread-count', '/clinic/packages/<int:package_id>/toggle', '/clinic/packages/<int:package_id>/delete', '/clinic/packages/<int:package_id>/analytics', '/clinic/packages/<int:package_id>/analytics/export', '/clinic/packages/<int:package_id>/update', '/clinic/packages/<int:package_id>/duplicate', '/clinic/packages/<int:package_id>/export', '/clinic/dashboard', '/clinic/create', '/clinic/package/add', '/clinic/package/add-legacy', '/clinic/package/<int:package_id>/edit', '/clinic/package/<int:package_id>/toggle', '/clinic/package/<int:package_id>/delete', '/clinic/profile/update', '/clinic/packages/add', '/clinic/packages/<int:package_id>/edit', '/packages/', '/api/packages/load-more', '/packages/<slug>', '/packages/<int:package_id>', '/packages/contact/<int:package_id>', '/api/categories/search', '/api/locations/search', '/api/packages/filters', '/api/geolocation', '/clinic/google-reviews', '/clinic/google-reviews/configure', '/clinic/google-reviews/sync', '/clinic/google-reviews/toggle-sync', '/clinic/google-reviews/hide/<int:review_id>', '/clinic/google-reviews/list', '/api/clinic/<int:clinic_id>/google-reviews', '/admin/clinic-applications', '/admin/clinic-applications/add', '/admin/clinic-applications/bulk-import', '/admin/clinic-applications/<int:app_id>/approve', '/admin/clinic-applications/<int:app_id>/reject', '/admin/clinic-applications/<int:app_id>']
+Sep 20 12:31:15  INFO:app:✅ Advanced SEO system registered
+Sep 20 12:31:15  INFO:app:✅ Medical content optimizer registered
+Sep 20 12:31:15  INFO:app:✅ Local SEO system registered
+Sep 20 12:31:15  INFO:app:✅ Enhanced procedure templates registered
+Sep 20 12:31:15  INFO:app:✅ Link building & authority system registered
+Sep 20 12:31:15  INFO:health_monitoring:✅ Health monitoring endpoints registered
+Sep 20 12:31:15  INFO:app:🚀 App ready for requests - initialization continues in background
+Sep 20 12:31:15  INFO:app:✅ Sitemap WSGI robots fix registered (lowest level)
