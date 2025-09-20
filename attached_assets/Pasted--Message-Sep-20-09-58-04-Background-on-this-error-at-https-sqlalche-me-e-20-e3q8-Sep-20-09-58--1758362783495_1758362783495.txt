@@ -1,0 +1,54 @@
+
+Message
+Sep 20 09:58:04
+ (Background on this error at: https://sqlalche.me/e/20/e3q8)
+Sep 20 09:58:04
+ INFO:routes:Enhanced lead generation system with Firebase OTP registered successfully.
+Sep 20 09:58:04
+ INFO:routes:OTP-only authentication system registered successfully.
+Sep 20 09:58:08
+ INFO:ai_recommendations_clean:Gemini AI initialized successfully
+Sep 20 09:58:08
+ INFO:routes:Clean AI recommendation system registered successfully.
+Sep 20 09:58:08
+ INFO:routes:Enhanced face analysis system with lead capture registered successfully.
+Sep 20 09:58:08
+ INFO:routes:Enhanced cost calculator system with lead capture registered successfully.
+Sep 20 09:58:08
+ INFO:routes:Comprehensive admin dashboard for lead analytics registered successfully.
+Sep 20 09:58:08
+ INFO:routes:Admin dashboard debug blueprint imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Community API routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Enhanced community routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Education routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Cost calculator routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Enhanced package routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:Community reply routes imported successfully.
+Sep 20 09:58:08
+ INFO:routes:SEO optimization - core infrastructure active, content pages disabled for debugging.
+Sep 20 09:58:08
+ INFO:routes:Community API blueprint registered successfully.
+Sep 20 09:58:08
+ INFO:routes:Education blueprint registered successfully.
+Sep 20 09:58:10
+ WARNING:utils.gemini_analysis:GOOGLE_API_KEY environment variable not set
+Sep 20 09:58:10
+ WARNING:routes:Face analysis routes not found. Face analysis feature will not be available.
+Sep 20 09:58:10
+ INFO:routes:Cost calculator blueprint registered successfully.
+Sep 20 09:58:11
+ INFO:payment_routes:Razorpay client initialized successfully
+Sep 20 09:58:11
+ INFO:routes:Payment routes registered successfully.
+Sep 20 09:58:11
+ INFO:simple_billing_system:Razorpay client initialized successfully
+Sep 20 09:58:11
+ INFO:routes:Simplified billing system with promo codes registered successfully as primary billing system.
+Sep 20 09:58:11
+ INFO:routes:Admin credit management system registered successfully.

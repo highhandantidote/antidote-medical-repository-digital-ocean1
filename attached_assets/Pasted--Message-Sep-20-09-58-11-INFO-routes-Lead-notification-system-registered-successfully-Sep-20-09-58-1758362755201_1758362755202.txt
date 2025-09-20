@@ -1,0 +1,58 @@
+
+Message
+Sep 20 09:58:11
+ INFO:routes:Lead notification system registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Lead disputes system registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Admin dashboard debug blueprint registered successfully.
+Sep 20 09:58:11
+ WARNING:routes:Enhanced review system not found.
+Sep 20 09:58:11
+ WARNING:routes:Virtual consultation system not found.
+Sep 20 09:58:11
+ INFO:routes:Social community system registered successfully.
+Sep 20 09:58:11
+ WARNING:routes:Price transparency system not found.
+Sep 20 09:58:11
+ WARNING:routes:Enhanced booking features not found.
+Sep 20 09:58:11
+ WARNING:routes:Gangnam Unni services & pricing system not found.
+Sep 20 09:58:11
+ INFO:routes:Community reply blueprint registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Banner routes registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Modern Community API registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Reddit Import System registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Main web and API blueprints registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Clinic marketplace routes registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Enhanced package routes registered successfully.
+Sep 20 09:58:11
+ INFO:routes:Google Reviews management system registered successfully.
+Sep 20 09:58:11
+ INFO:admin_clinic_routes:Admin clinic routes registered successfully
+Sep 20 09:58:11
+ INFO:routes:Admin clinic application routes registered successfully.
+Sep 20 09:58:11
+ INFO:app:✅ Core routes registered successfully
+Sep 20 09:58:11
+ INFO:app:✅ Advanced SEO system registered
+Sep 20 09:58:11
+ INFO:app:✅ Medical content optimizer registered
+Sep 20 09:58:11
+ INFO:app:✅ Local SEO system registered
+Sep 20 09:58:11
+ INFO:app:✅ Enhanced procedure templates registered
+Sep 20 09:58:11
+ INFO:app:✅ Link building & authority system registered
+Sep 20 09:58:11
+ INFO:health_monitoring:✅ Health monitoring endpoints registered
+Sep 20 09:58:11
+ INFO:app:🚀 App ready for requests - initialization continues in background
+Sep 20 09:58:11
+ INFO:app:✅ Sitemap WSGI robots fix registered (lowest l
