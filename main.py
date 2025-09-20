@@ -11,10 +11,12 @@ logging.basicConfig(
 # Create the Flask application
 app = create_app()
 
-# Ensure the app binds to 0.0.0.0:5000 explicitly for deployment
+# Ensure the app binds to any host for deployment compatibility
 app.config['SERVER_NAME'] = None  # Allow any host for deployment
 
 if __name__ == "__main__":
-    # Run the Flask application with explicit host and port binding
+    # Run the Flask application with proper port handling for deployment
+    # This ensures compatibility with both Replit (default 5000) and DigitalOcean (dynamic PORT)
     port = int(os.environ.get('PORT', 5000))
-    app.run(host="0.0.0.0", port=port, debug=True)
+    debug_mode = os.environ.get('FLASK_ENV') != 'production'
+    app.run(host="0.0.0.0", port=port, debug=debug_mode)
