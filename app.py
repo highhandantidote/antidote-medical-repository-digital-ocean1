@@ -1,8 +1,9 @@
 import os
 import logging
+import requests
 import pytz
 from datetime import datetime, timedelta
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
 from werkzeug.middleware.proxy_fix import ProxyFix
@@ -381,7 +382,7 @@ def create_app():
         """CSRF-exempt tracking endpoint for personalization."""
         try:
             from personalization_service import PersonalizationService
-            from flask import request
+
             
             # Get data from either JSON or form data
             if request.is_json:
@@ -457,7 +458,7 @@ def create_app():
     def api_banner_click():
         """CSRF-exempt banner click tracking."""
         try:
-            from flask import request
+
             data = request.get_json()
             if not data or 'slide_id' not in data:
                 return jsonify({'success': False, 'message': 'Missing slide_id'}), 400
@@ -491,9 +492,7 @@ def create_app():
     def app_geocode_address():
         """Server-side geocoding to avoid CORS issues - CSRF exempt for frontend calls."""
         try:
-            import requests
             import re
-            from flask import request, jsonify
             
             data = request.get_json()
             original_address = data.get('address', '')
