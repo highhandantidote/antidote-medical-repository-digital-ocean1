@@ -645,9 +645,19 @@ def create_app():
             logger.warning(f"Clinic dashboard not available: {e}")
         
         # Register routes for immediate functionality
-        from routes import register_routes
-        register_routes(app)
-        logger.info("✅ Core routes registered successfully")
+        try:
+            from routes import register_routes
+            register_routes(app)
+            logger.info("✅ Core routes registered successfully")
+            
+            # Debug: Log registered routes to verify blueprints are working
+            logger.info(f"🔍 Registered routes: {[rule.rule for rule in app.url_map.iter_rules()]}")
+        except Exception as e:
+            logger.error(f"❌ CRITICAL: Failed to register core routes: {e}")
+            # Add basic fallback route so app doesn't return 404
+            @app.route('/')
+            def emergency_home():
+                return "App is starting... Please check logs for route registration issues."
         
         # Register advanced SEO system for top Google rankings
         try:

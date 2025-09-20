@@ -1,0 +1,122 @@
+Sep 20 12:14:03  INFO:deployment_config:Applying deployment configuration...
+Sep 20 12:14:03  INFO:deployment_config:✅ Deployment configuration applied successfully
+Sep 20 12:14:03  INFO:app:✅ Environment optimized for deployment
+Sep 20 12:14:03  INFO:app:✅ Security headers middleware registered
+Sep 20 12:14:03  INFO:app:✅ Security headers middleware enabled
+Sep 20 12:14:03  INFO:server_performance_optimization:Performance optimization system initialized
+Sep 20 12:14:03  INFO:mobile_performance_monitor:✅ Mobile performance monitoring initialized
+Sep 20 12:14:03  INFO:app:Performance optimization system initialized successfully
+Sep 20 12:14:03  🚀 Registering safe performance optimizations...
+Sep 20 12:14:03  ⚠️ Compression middleware disabled to prevent encoding issues
+Sep 20 12:14:03  ✅ Cache headers enabled for static files
+Sep 20 12:14:03  ✅ Database query caching initialized
+Sep 20 12:14:03  ✅ Performance monitoring enabled
+Sep 20 12:14:03  🎯 Safe performance optimizations registered successfully
+Sep 20 12:14:03  INFO:app:Phase 2 CSS and static asset optimizations initialized
+Sep 20 12:14:03  Server response optimizations initialized
+Sep 20 12:14:03  INFO:app:Phase 3 server response optimizations initialized
+Sep 20 12:14:03  INFO:app:Responsive image serving initialized
+Sep 20 12:14:03  INFO:app:Phase 4A static asset optimization disabled to prevent endpoint conflicts
+Sep 20 12:14:03  INFO:app:Phase 4A server response optimization initialized
+Sep 20 12:14:03  ✅ Advanced performance middleware registered
+Sep 20 12:14:03  🚀 Advanced performance optimizations registered successfully
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Keeping essential module: critical_performance_fix
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Keeping essential module: css_render_blocking_fix
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Keeping essential module: security_headers
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Keeping essential module: compression_middleware
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Middleware order optimized
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Middleware conflicts resolved - Disabled 0 redundant modules
+Sep 20 12:14:03  INFO:middleware_conflict_resolver:✅ Middleware conflict resolution registered
+Sep 20 12:14:03  INFO:app:✅ Middleware conflicts resolved
+Sep 20 12:14:03  INFO:doctors_route_optimizer:✅ Optimized doctors route registered
+Sep 20 12:14:03  INFO:app:⚡ Optimized doctors route registered
+Sep 20 12:14:03  ✅ Server response optimizations registered
+Sep 20 12:14:03  🚀 Server response optimizations registered successfully
+Sep 20 12:14:03  INFO:app:✅ Mobile performance optimization (100% target) registered
+Sep 20 12:14:03  INFO:app:📱 Mobile performance optimizer registered
+Sep 20 12:14:03  INFO:force_production_config:🔧 Forcing production optimizations for antidote.fit
+Sep 20 12:14:03  INFO:force_production_config:✅ Production optimizations forced - pool_size=30, cache=simple
+Sep 20 12:14:03  INFO:app:🔥 Forced production configuration applied
+Sep 20 12:14:03  INFO:app:✅ Compression middleware enabled
+Sep 20 12:14:03  INFO:app:✅ Optimized static file serving enabled
+Sep 20 12:14:03  INFO:app:✅ Performance configuration registered
+Sep 20 12:14:03  INFO:deployment_startup_fix:✅ Health check endpoints registered
+Sep 20 12:14:03  INFO:deployment_startup_fix:🚀 Starting background initialization...
+Sep 20 12:14:03  INFO:deployment_startup_fix:🔄 Background initialization thread started
+Sep 20 12:14:03  INFO:deployment_startup_fix:⚡ Starting fast database initialization...
+Sep 20 12:14:03  INFO:deployment_startup_fix:✅ Deployment settings configured
+Sep 20 12:14:03  INFO:deployment_startup_fix:✅ Database connection verified
+Sep 20 12:14:03  INFO:app:Unified clinic dashboard blueprint registered
+Sep 20 12:14:03  WARNING:app:Clinic dashboard not available: cannot import name 'ClinicConsultation' from 'models' (/workspace/models.py)
+Sep 20 12:14:04  INFO:admin_transaction_history:Admin audit log table created successfully
+Sep 20 12:14:04  INFO:dispute_management_system:Dispute management tables created successfully
+Sep 20 12:14:04  INFO:routes:Enhanced lead generation system with Firebase OTP registered successfully.
+Sep 20 12:14:04  INFO:routes:OTP-only authentication system registered successfully.
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ Database tables created in 1.447s
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ Database initialization completed successfully
+Sep 20 12:14:05  INFO:deployment_startup_fix:🔧 Initializing core services...
+Sep 20 12:14:05  WARNING:deployment_startup_fix:⚠️ Personalization service initialization failed: type object 'PersonalizationService' has no attribute 'initialize_cache'
+Sep 20 12:14:05  INFO:deployment_startup_fix:ℹ️ Search optimizer not available
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ Core services initialization completed
+Sep 20 12:14:05  INFO:deployment_startup_fix:⚡ Initializing performance systems...
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ server_response_optimization initialized
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ compression_middleware initialized
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ static_asset_optimizer initialized
+Sep 20 12:14:05  INFO:deployment_startup_fix:ℹ️ css_optimizer not available
+Sep 20 12:14:05  INFO:deployment_startup_fix:ℹ️ image_optimizer not available
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ Performance systems initialization completed
+Sep 20 12:14:05  INFO:deployment_startup_fix:✅ Background initialization completed in 1.96s
+Sep 20 12:14:08  INFO:ai_recommendations_clean:Gemini AI initialized successfully
+Sep 20 12:14:08  INFO:routes:Clean AI recommendation system registered successfully.
+Sep 20 12:14:08  INFO:routes:Enhanced face analysis system with lead capture registered successfully.
+Sep 20 12:14:08  INFO:routes:Enhanced cost calculator system with lead capture registered successfully.
+Sep 20 12:14:08  INFO:routes:Comprehensive admin dashboard for lead analytics registered successfully.
+Sep 20 12:14:08  INFO:routes:Admin dashboard debug blueprint imported successfully.
+Sep 20 12:14:08  INFO:routes:Community API routes imported successfully.
+Sep 20 12:14:08  INFO:routes:Enhanced community routes imported successfully.
+Sep 20 12:14:08  INFO:routes:Education routes imported successfully.
+Sep 20 12:14:08  INFO:routes:Cost calculator routes imported successfully.
+Sep 20 12:14:08  INFO:routes:Enhanced package routes imported successfully.
+Sep 20 12:14:08  INFO:routes:Community reply routes imported successfully.
+Sep 20 12:14:08  INFO:routes:SEO optimization - core infrastructure active, content pages disabled for debugging.
+Sep 20 12:14:08  INFO:routes:Community API blueprint registered successfully.
+Sep 20 12:14:08  INFO:routes:Education blueprint registered successfully.
+Sep 20 12:14:10  WARNING:utils.gemini_analysis:GOOGLE_API_KEY environment variable not set
+Sep 20 12:14:11  WARNING:routes:Face analysis routes not found. Face analysis feature will not be available.
+Sep 20 12:14:11  INFO:routes:Cost calculator blueprint registered successfully.
+Sep 20 12:14:11  INFO:payment_routes:Razorpay client initialized successfully
+Sep 20 12:14:11  INFO:routes:Payment routes registered successfully.
+Sep 20 12:14:11  INFO:simple_billing_system:Razorpay client initialized successfully
+Sep 20 12:14:11  INFO:routes:Simplified billing system with promo codes registered successfully as primary billing system.
+Sep 20 12:14:11  INFO:routes:Admin credit management system registered successfully.
+Sep 20 12:14:11  INFO:routes:Dynamic lead pricing system registered successfully.
+Sep 20 12:14:11  WARNING:routes:Dispute management system registration failed: View function mapping is overwriting an existing endpoint function: dispute.decorated_function
+Sep 20 12:14:11  INFO:routes:Enhanced lead capture with credit processing registered successfully.
+Sep 20 12:14:11  INFO:routes:Lead notification system registered successfully.
+Sep 20 12:14:11  INFO:routes:Lead disputes system registered successfully.
+Sep 20 12:14:11  INFO:routes:Admin dashboard debug blueprint registered successfully.
+Sep 20 12:14:11  WARNING:routes:Enhanced review system not found.
+Sep 20 12:14:11  WARNING:routes:Virtual consultation system not found.
+Sep 20 12:14:11  INFO:routes:Social community system registered successfully.
+Sep 20 12:14:11  WARNING:routes:Price transparency system not found.
+Sep 20 12:14:11  WARNING:routes:Enhanced booking features not found.
+Sep 20 12:14:11  WARNING:routes:Gangnam Unni services & pricing system not found.
+Sep 20 12:14:11  INFO:routes:Community reply blueprint registered successfully.
+Sep 20 12:14:11  INFO:routes:Banner routes registered successfully.
+Sep 20 12:14:11  INFO:routes:Modern Community API registered successfully.
+Sep 20 12:14:11  INFO:routes:Reddit Import System registered successfully.
+Sep 20 12:14:11  INFO:routes:Main web and API blueprints registered successfully.
+Sep 20 12:14:11  INFO:routes:Clinic marketplace routes registered successfully.
+Sep 20 12:14:11  INFO:routes:Enhanced package routes registered successfully.
+Sep 20 12:14:11  INFO:routes:Google Reviews management system registered successfully.
+Sep 20 12:14:11  INFO:admin_clinic_routes:Admin clinic routes registered successfully
+Sep 20 12:14:11  INFO:routes:Admin clinic application routes registered successfully.
+Sep 20 12:14:11  INFO:app:✅ Core routes registered successfully
+Sep 20 12:14:11  INFO:app:✅ Advanced SEO system registered
+Sep 20 12:14:11  INFO:app:✅ Medical content optimizer registered
+Sep 20 12:14:11  INFO:app:✅ Local SEO system registered
+Sep 20 12:14:11  INFO:app:✅ Enhanced procedure templates registered
+Sep 20 12:14:11  INFO:app:✅ Link building & authority system registered
+Sep 20 12:14:11  INFO:health_monitoring:✅ Health monitoring endpoints registered
+Sep 20 12:14:11  INFO:app:🚀 App ready for requests - initialization continues in background
+Sep 20 12:14:11  INFO:app:✅ Sitemap WSGI robots fix registered (lowest level)
